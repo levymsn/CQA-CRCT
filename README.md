@@ -33,7 +33,8 @@ visual and textual information into a pooled tuple of two single feature vectors
 our hybrid prediction head containing two different MLPs, outputs a classification score and a  
 regression result. co_i/self_i: co/self attention at block i.
 
-# Citation #
+## Citation ##
+In case you find this useful, please cite:
 ``` 
 
 ```
@@ -43,7 +44,7 @@ regression result. co_i/self_i: co/self attention at block i.
 Follow these steps:
 1. Set `name: your_env_name` in **CRCT/environment.yml**.
 2. Install environment via conda: `conda env create -f CRCT/environment.yml`.
-3. Install **Detectron2**  repository (from [here](https://github.com/facebookresearch/detectron2)).
+3. Install **Detectron2**  repository (from [here](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md)).
 
 ## Downloads ##
 ### Dataset ###  
@@ -62,6 +63,12 @@ The raw **PlotQA** dataset is available [here](https://github.com/NiteshMethani/
 ### Config ###
 The PlotQA config is in `CRCT/config/plotqa.json`. Set the line `"main_folder": "My/full/path/to/CRCT/",` with your own path to the CRCT folder.
 ## Training ##
+### Detection Stage: training Mask-RCNN ###
+For training your own Mask-RCNN on PlotQA images, use:
+<pre>cd Detector
+python frcnn.py --output MyDetector --batch-size 128 --num-gpus 4</pre>
+For more details, see [Detectorn2](https://github.com/facebookresearch/detectron2).
+### Question-Answering Stage: training CRCT ###
 Use the following command for training your own model:<br />
 <pre>python train.py -qa_file qa_pairs_V1_10%.npy -dataset_config config/plotqa.json -batch_size 80 -save_name MyOwnCRCT -num_workers 2 -ddp -world_size 4 -num_proc 4 -L1</pre>
 - `-qa_file`: The Q&As file, in .npy format.
@@ -84,7 +91,9 @@ For evaluate a model , use the following command:
 ## Interactive Demo ##
 For running a terminal interactive demo:
 <pre>cd CRCT<br />python Interactive_demo.py</pre>
-## Acknowledgements
+<hr />
+
+## Acknowledgements ##
 - Backbone was built on Jiasen Lu's [ViLBERT](https://github.com/jiasenlu/vilbert_beta), and Vishvak's [implementation](https://github.com/vmurahari3/visdial-bert).<br />
 - We wish to thank Nir Zabari and Or Kedar for their assistance in parts of this
 research.
