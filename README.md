@@ -12,8 +12,8 @@
 > comprehension, which is fundamentally different from understanding
 > natural images. CQA requires analyzing the relationships between the
 > textual and the visual components of a chart, in order to answer
-> general questions or infer numerical values. Most existing CQA {\it
-> datasets} and {\it models} are based on simplifying assumptions that
+> general questions or infer numerical values. Most existing CQA
+> _datasets_ and _models_ are based on simplifying assumptions that
 > often enable surpassing human performance. In this work, we address
 > this outcome and propose a new model that jointly learns
 > classification and regression. Our language-vision set up with
@@ -76,7 +76,7 @@ For evaluate a model , use the following command:
 - `-continue`: This flag will raise an error in case the weights are not suitable to the model.
 
 ## Acknowledgements
-Backbone was built on Jiasen Lu's [ViLBERT](https://github.com/jiasenlu/vilbert_beta), and Vishvak's [implementation](https://github.com/vmurahari3/visdial-bert).
-e wish to thank Nir Zabari and Or Kedar for their assistance in parts of this
+Backbone was built on Jiasen Lu's [ViLBERT](https://github.com/jiasenlu/vilbert_beta), and Vishvak's [implementation](https://github.com/vmurahari3/visdial-bert).<br />
+We wish to thank Nir Zabari and Or Kedar for their assistance in parts of this
 research. We further thank the authors of PlotQA [20] for sharing additional test breakdowns. Part
 of this research was conducted during an internship at IBM Research AI, Haifa.
