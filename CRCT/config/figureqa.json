@@ -1,0 +1,17 @@
+{
+    "name": "FigureQA Default config",
+    "dataset": "figure_qa",
+    "categories": 258,
+    "max_vis_features": 70,
+    "max_seq_len": 64,
+    "binary_answers": true,
+    "main_folder": "",
+    "model_config": "config/plotqa_model_large.json",
+    "save_path": "results/",
+    "figure_feat_path": "data/fig_features/FigureQA/",
+    "qa_parent_dir": "data/QA/FigureQA/",
+    "tensorboard": "results/tensorboard/",
+    "checkpoints_dir": "results/",
+    "dataset_files_divisions": {"train": 1000, "val": 1000, "test": 1000},
+    "splits": ["train1", "validation1", "validation2"]
+}

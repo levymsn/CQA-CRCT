@@ -1,0 +1,17 @@
+{
+    "name": "DVQA Default config",
+    "dataset": "dvqa",
+    "categories": 62,
+    "max_vis_features": 30,
+    "max_seq_len": 124,
+    "binary_answers": false,
+    "main_folder": "",
+    "model_config": "config/plotqa_model_large.json",
+    "save_path": "results/",
+    "figure_feat_path": "data/fig_features/DVQA/",
+    "qa_parent_dir": "data/QA/DVQA/",
+    "tensorboard": "results/tensorboard/",
+    "checkpoints_dir": "results/",
+    "dataset_files_divisions": {"train": 1000, "val": 1000, "test": 1000},
+    "splits": ["train", "val_easy", "test"]
+}

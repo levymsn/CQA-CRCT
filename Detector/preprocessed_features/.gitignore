@@ -1,0 +1,11 @@
+tignore to keep just .txt files
+###################################
+
+# Filter everything...
+*
+
+# ... except the .gitignore...
+!.gitignore
+
+# ... and all text files.
+!*.md
