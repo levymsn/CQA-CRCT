@@ -2,8 +2,12 @@
 
 
 #  Classification-Regression for Chart Comprehension (ECCV 2022)
+<a href="https://arxiv.org/abs/2111.14792"><img src="https://img.shields.io/badge/arXiv-2111.14792-b31b1b.svg"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+<a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.6.0-Red?logo=pytorch"></a>
 
 #### Published in European Conference on Computer Vision 2022.
+
 > [Classification-Regression for Chart Comprehension](https://arxiv.org/abs/2111.14792) <br />
 > **Matan Levy, Rami Ben-Ari, Dani Lischinski**<br /><br />
 > **Abstract:** Chart question answering (CQA) is a task used for assessing chart
@@ -36,7 +40,7 @@ regression result. co_i/self_i: co/self attention at block i.
 ## Citation ##
 In case you find this useful, please cite:
 ``` 
-
+Coming Soon
 ```
 # Getting Started #
 
