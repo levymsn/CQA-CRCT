@@ -6,7 +6,7 @@
     "max_seq_len": 64,
     "binary_answers": true,
     "main_folder": "",
-    "model_config": "config/plotqa_model_large.json",
+    "model_config": "config/vilbert.json",
     "save_path": "results/",
     "figure_feat_path": "data/fig_features/FigureQA/",
     "qa_parent_dir": "data/QA/FigureQA/",

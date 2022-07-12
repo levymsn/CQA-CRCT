@@ -6,7 +6,7 @@
     "max_seq_len": 124,
     "binary_answers": false,
     "main_folder": "/ECCV22/CRCT/",
-    "model_config": "config/plotqa_model_large.json",
+    "model_config": "config/vilbert.json",
     "save_path": "results/",
     "figure_feat_path": "data/fig_features/PlotQA/",
     "qa_parent_dir": "data/QA/PlotQA/",

@@ -248,7 +248,7 @@ class Model(nn.Module):
 
 
 if __name__ == "__main__":
-    sys.argv = ['Interactive_demo.py', '-qa_file', 'qa_pairs_p.npy', '-eval_batch_size', '100',
+    sys.argv = ['Interactive_demo.py', '-qa_file', 'qa_pairs_test.npy', '-eval_batch_size', '100',
                 '-num_workers', '0', '-ddp', '-world_size', '1', '-num_proc', '1',
                 '-save_name', 'temp', '-dataset_config', 'config/plotqa.json',
                 '-eval_set', 'test', '-start_checkpoint', 'crct.ckpt',

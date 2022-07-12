@@ -1,7 +1,4 @@
-
-
-
-#  Classification-Regression for Chart Comprehension (ECCV 2022)
+#  [ECCV 2022] Classification-Regression for Chart Comprehension
 <a href="https://arxiv.org/abs/2111.14792"><img src="https://img.shields.io/badge/arXiv-2111.14792-b31b1b.svg"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.6.0-Red?logo=pytorch"></a>
@@ -10,22 +7,7 @@
 
 > [Classification-Regression for Chart Comprehension](https://arxiv.org/abs/2111.14792) <br />
 > **Matan Levy, Rami Ben-Ari, Dani Lischinski**<br /><br />
-> **Abstract:** Chart question answering (CQA) is a task used for assessing chart
-> comprehension, which is fundamentally different from understanding
-> natural images. CQA requires analyzing the relationships between the
-> textual and the visual components of a chart, in order to answer
-> general questions or infer numerical values. Most existing CQA
-> _datasets_ and _models_ are based on simplifying assumptions that
-> often enable surpassing human performance. In this work, we address
-> this outcome and propose a new model that jointly learns
-> classification and regression. Our language-vision set up with
-> co-attention transformers captures the complex real-world interactions
-> between the question and the textual elements. We validate our design
-> with extensive experiments on the realistic PlotQA dataset,
-> outperforming previous approaches by a large margin, while showing
-> competitive performance on FigureQA. Our model is particularly well
-> suited for realistic questions with out-of-vocabulary answers that
-> require regression.
+> **Abstract:** Chart question answering (CQA) is a task used for assessing chart comprehension, which is fundamentally different from understanding natural images. CQA requires analyzing the relationships between the textual and the visual components of a chart, in order to answer general questions or infer numerical values. Most existing CQA datasets and models are based on simplifying assumptions that often enable surpassing human performance. In this work, we address this outcome and propose a new model that jointly learns classification and regression. Our language-vision setup uses co-attention transformers to capture the complex real-world interactions between the question and the textual elements. We validate our design with extensive experiments on the realistic PlotQA dataset, outperforming previous approaches by a large margin, while showing competitive performance on FigureQA. Our model is particularly well suited for realistic questions with out-of-vocabulary answers that require regression.
 <hr />
 <img src="images/arc.png" alt="CRCT architecture, from the original paper.">
 
@@ -40,7 +22,7 @@ regression result. co_i/self_i: co/self attention at block i.
 ## Citation ##
 In case you find this useful, please cite:
 ``` 
-Coming Soon
+
 ```
 # Getting Started #
 
@@ -57,7 +39,10 @@ The raw **PlotQA** dataset is available [here](https://github.com/NiteshMethani/
 
 ### Dataset Features ###
 - [Post-Detection features](https://drive.google.com/drive/folders/1izDliZozv9ArdVNmWUQWGMNKPqw7Pf79?usp=sharing): PlotQA images features, extracted from a pretrained Mask-RCNN.
-- [10% Subset of V1 train](https://drive.google.com/drive/folders/1VoJVGbquD6apGiecscDf4rOSX6Ih6-D3?usp=sharing): A randomly selected subset of the original V1 Question-Answers file (.npy format).
+- [Q&As files in .npy format](https://drive.google.com/drive/folders/1VoJVGbquD6apGiecscDf4rOSX6Ih6-D3?usp=sharing): PlotQA data Q&As converted to numpy **.npy** format.
+
+    `qa_pairs_V1_train_10%.npy`: A randomly selected 10% subset of the original V1 Question-Answers file.
+    `qa_pairs_test.npy`: PlotQA test Question-Answers file.
 ### Model Weights ###
 - [Pretrained CRCT weights](https://drive.google.com/drive/folders/10eXEpJPA_p1jMte6mldkN3qLpP70xkH-?usp=sharing): trained on the extracted features from above.
 - [Pretrained Mask-RCNN weights](https://drive.google.com/drive/folders/1p-NUAmsYuAf_RWP2MTh4LM05oiS4bY7Y?usp=sharing): trained on the extended annotations from above.
@@ -91,9 +76,8 @@ For evaluate a model , use the following command:
 - `-start_checkpoint`: weights file in `CRCT/checkpoints/`.
 - `-eval_set`: choose test/val/train.
 - `-continue`: This flag will raise an error in case the weights are not suitable to the model.
-
 ## Interactive Demo ##
-For running a terminal interactive demo:
+Try the CRCT model yourself. Download weights/features/Q&As from above, and run:
 <pre>cd CRCT<br />python Interactive_demo.py</pre>
 <hr />
 
