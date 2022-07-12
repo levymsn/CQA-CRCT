@@ -51,6 +51,7 @@ The raw **PlotQA** dataset is available [here](https://github.com/NiteshMethani/
 
 ### Config ###
 The PlotQA config is in `CRCT/config/plotqa.json`. Set the line `"main_folder": "My/full/path/to/CRCT/",` with your own path to the CRCT folder.
+<br />For more details see [CRCT/config/README.md](CRCT/config/README.md).
 ## Training ##
 ### Detection Stage: training Mask-RCNN ###
 For training your own Mask-RCNN on PlotQA images, use:
