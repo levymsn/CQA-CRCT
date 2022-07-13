@@ -1,5 +1,5 @@
 #  [ECCV 2022] Classification-Regression for Chart Comprehension
-<a href="https://arxiv.org/abs/2111.14792"><img src="https://img.shields.io/badge/arXiv-2111.14792-b31b1b.svg"></a>
+#### [[Project Page](https://www.vision.huji.ac.il/crct/) | [Paper (arxiv)](https://arxiv.org/abs/2111.14792)] #### 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.6.0-Red?logo=pytorch"></a>
 
@@ -18,7 +18,6 @@ along with the question text, enable the co-transformers in the second stage (ri
 visual and textual information into a pooled tuple of two single feature vectors {hv0 , hw0 }. Next,  
 our hybrid prediction head containing two different MLPs, outputs a classification score and a  
 regression result. co_i/self_i: co/self attention at block i.
-
 ## Citation ##
 In case you find this useful, please cite:
 ``` 
@@ -81,6 +80,9 @@ For evaluate a model , use the following command:
 Try the CRCT model yourself. Download weights/features/Q&As from above, and run:
 <pre>cd CRCT<br />python Interactive_demo.py</pre>
 <hr />
+
+### Examples ###
+For inference examples, please visit the Project page at [https://www.vision.huji.ac.il/crct/](https://www.vision.huji.ac.il/crct/).
 
 ## Acknowledgements ##
 - Backbone was built on Jiasen Lu's [ViLBERT](https://github.com/jiasenlu/vilbert_beta), and Vishvak's [implementation](https://github.com/vmurahari3/visdial-bert).<br />
