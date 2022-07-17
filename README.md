@@ -21,12 +21,7 @@ regression result. co_i/self_i: co/self attention at block i.
 ## Citation ##
 In case you find this useful, please cite:
 ``` 
-@inproceedings{levy2022crct,
-  title={Classification-Regression for Chart Comprehension},
-  author={Levy, Matan and Ben-Ari, Rami and Lischinski, Dani},
-  booktitle={European Conference on Computer Vision (ECCV)},
-  year={2022}
-  }
+
 ```
 # Getting Started #
 
