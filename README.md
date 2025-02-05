@@ -1,5 +1,5 @@
 #  [ECCV 2022] Classification-Regression for Chart Comprehension
-#### [[Project Page](https://www.vision.huji.ac.il/crct/) | [Paper (arxiv)](https://arxiv.org/abs/2111.14792)] #### 
+#### [[Project Page](https://levymsn.github.io/CRCT) | [Paper (arxiv)](https://arxiv.org/abs/2111.14792)] #### 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch->=1.6.0-Red?logo=pytorch"></a>
 
